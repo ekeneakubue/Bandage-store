@@ -1,0 +1,70 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --body-font: "Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+}  
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+/* ========== END GLOBAL STYLES ========== */
+
+
+
+/* ========== START TOPNAVBAR STYLES ========== */
+.top_navbar{
+    height: 58px;
+    background-color: var(--TopnavBg);
+    color: var(--BgColor);
+    padding: 0rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_navbar .left{
+    display: flex;
+    gap: 2rem;
+    width: 50%;
+}
+.top_navbar .left > p {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.top_navbar .right{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.socials{
+    width: 35%;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: end;
+}
+.socials > img{
+    width: 15px;
+    height: 15px;
+}
+/* ========== END TOPNAVBAR STYLES ========== */
+
+
+
+/* ========== START NAVBAR STYLES ========== */
+.navbar{
+    background-color: red;
+    padding: 0rem 2rem;
+}
+/* ========== START NAVBAR STYLES ========== */
