@@ -3,6 +3,9 @@
     --TopnavBg: #23856D;
     --BgColor: #ffffff;
     --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --SkyBlue: #23A6F0;
     --body-font: "Montserrat", sans-serif;
 }
 *{
@@ -10,7 +13,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--body-font);
-}  
+} 
 ul{
     list-style: none;
 }
@@ -25,6 +28,7 @@ a{
 /* ========== START TOPNAVBAR STYLES ========== */
 .top_navbar{
     height: 58px;
+    width: Fixed (1,438px);
     background-color: var(--TopnavBg);
     color: var(--BgColor);
     padding: 0rem 2rem;
@@ -35,16 +39,20 @@ a{
 .top_navbar .left{
     display: flex;
     gap: 2rem;
-    width: 50%;
+    width: 45%;
 }
-.top_navbar .left > p {
+.top_navbar .left h6{
     display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
     align-items: center;
-    gap: 0.3rem;
+    gap: 5px;
 }
 .top_navbar .right{
     display: flex;
-    width: 50%;
+    width: 55%;
     justify-content: space-between;
 }
 .socials{
@@ -62,9 +70,58 @@ a{
 
 
 
-/* ========== START NAVBAR STYLES ========== */
-.navbar{
-    background-color: red;
+/* ========== START DOWN NAVBAR STYLES ========== */
+.downNavbar{
     padding: 0rem 2rem;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
 }
-/* ========== START NAVBAR STYLES ========== */
+.downNavbar > .left{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 58px;   
+}
+.downNavbar > .left h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--Brand-black);
+}
+.downNavbar > .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    width: 85%;
+    height: 58px;
+}
+.downNavbar > .right .navs{
+    width: 70%;
+}
+.downNavbar > .right .navs ul{
+    display: flex;
+    width: Hug (361px)px;
+    height: Hug (25px)px;
+    top: 16.5px;
+    gap: 23px;
+    opacity: 0px;
+    color: var(--Navs-black);
+}
+.downNavbar .follow{
+    width: 19%;
+    display: flex;     
+    color: var(--SkyBlue);
+    justify-content: space-between;
+}
+.follow > h6{
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    letter-spacing: 0.2px;
+    gap: 0.5rem;
+    font-size: 14px;
+}
+/* ========== START DOWN NAVBAR STYLES ========== */
