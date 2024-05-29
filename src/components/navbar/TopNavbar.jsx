@@ -6,8 +6,8 @@ export default function TopNavbar() {
         <>
             <div className={style.top_navbar}>
                 <div className={style.left}>
-                    <p><img src="images/topnav/phone-icon.png" alt="" />(225) 555-0118</p>
-                    <p><img src="images/topnav/email-icon.png" alt="" />michelle.rivera@example.com</p>
+                    <h6><img src="images/topnav/phone-icon.png" alt="" />(225) 555-0118</h6>
+                    <h6><img src="images/topnav/email-icon.png" alt="" />michelle.rivera@example.com</h6>
                 </div>
                 <div className={style.right}>
                     <p>Follow Us  and get a chance to win 80% off</p>
