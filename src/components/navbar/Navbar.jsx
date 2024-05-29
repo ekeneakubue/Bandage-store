@@ -23,11 +23,17 @@ export default function Navbar() {
                   <li>Pages</li>
                 </ul>
               </div>
-              <div className={style.follow}>
+              <div className={style.navbar_btns}>
                 <h6><img src="images/downnav/user-icon.png" alt="user" />Login / Register</h6>
-                <img src="images/downnav/search-icon.png" alt="search" />
-                <img src="images/downnav/cart-icon.png" alt="cart" />
-                <img src="images/downnav/like-icon.png" alt="like" />
+                <div>
+                  <img src="images/downnav/search-icon.png" alt="search" />
+                </div>
+                <div>
+                  <img src="images/downnav/cart-icon.png" alt="cart" /><sup>1</sup>
+                </div>
+                <div>
+                  <img src="images/downnav/like-icon.png" alt="like" /><sup>1</sup>
+                </div>
               </div>
             </div>
         </div>
