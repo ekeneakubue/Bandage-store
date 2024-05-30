@@ -1,8 +1,31 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import style from './Products.module.css'
 import { products } from './Data'
 
 export default function Products() {
+
+    const [data, setData] = useState([]);
+    const [filter, setFilter] = useState(data);
+    const [loading, setLoading] = useState(false);
+    let componentMounted = true;
+
+    useEffect(() => {
+        const getProducts = async () => {
+            setLoading(true);
+            const response = await fetch('https://dummyjson.com/products');
+            if(componentMounted){
+                setData(await response.clone().json());
+                setFilter(await response.json());
+                setLoading(false);
+                console.log(filter);
+            }
+            return () =>{
+                componentMounted = false;
+            }
+        }
+        getProducts();
+    }, []);
+
   return (
     <div className={style.products}> 
         <h4>Featured Products</h4>    
