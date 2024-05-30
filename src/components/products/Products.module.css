@@ -41,7 +41,12 @@ a{
     color: var(--Navs-black);
 }
 .card_body{
+    transition: all 0.5s ease;
     padding: 1rem 0rem
+}
+.card_body:hover{
+    transition: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .card_body img{
     width: 90%;
