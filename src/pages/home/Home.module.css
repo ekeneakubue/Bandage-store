@@ -5,6 +5,7 @@
     --textBlack: #000;
     --Brand-black: #252B42;
     --Navs-black: #737373;
+    --OldPriceColor: #BDBDBD;
     --SkyBlue: #23A6F0;
     --body-font: "Montserrat", sans-serif;
 }
@@ -22,3 +23,22 @@ a{
 } 
 
 /* ========== END GLOBAL STYLES ========== */
+
+
+.product_cards{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.products > .pro_button{
+    width: 20%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--SkyBlue);
+    background-color: transparent;
+    border: 1px solid var(--SkyBlue);
+}
