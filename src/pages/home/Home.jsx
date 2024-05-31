@@ -40,9 +40,7 @@ export default function Home() {
         <h3>BESTSELLER PRODUCTS</h3>  
         <p>Problems trying to resolve the conflict between </p>            
         <div className={style.product_cards}>
-            {
-              displayedItems 
-            }  
+            {displayedItems}  
         </div>
 
         {
