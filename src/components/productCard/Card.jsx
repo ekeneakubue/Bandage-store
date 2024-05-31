@@ -2,8 +2,8 @@ import React from 'react'
 import style from './Card.module.css'
 
 export default function Card(props) {
-  return (
-    <div>
+  return (    
+    <div className={style.card}>
         <img src={props.imageUrl} />
         <h5>{props.title}</h5>
         <p>{props.category}</p>
@@ -11,6 +11,6 @@ export default function Card(props) {
             <span>${props.price}</span>
             <span>${props.discountPercentage}</span>
         </h5>                                                 
-    </div>     
+    </div> 
   )
 }

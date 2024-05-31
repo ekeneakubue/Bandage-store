@@ -25,10 +25,27 @@ a{
 /* ========== END GLOBAL STYLES ========== */
 
 
+.products{
+    padding: 5rem 8rem;    
+    text-align: center;
+}
+.products h4{   
+    margin-bottom: 1rem;
+    font-size: 20px;
+    color: var(--Navs-black);
+}
+.products > p{
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--Navs-black);
+}
+
 .product_cards{
+    width: 100%;
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 4rem 1rem;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .products > .pro_button{

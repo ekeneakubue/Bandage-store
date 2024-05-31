@@ -113,7 +113,7 @@ a{
     color: var(--Navs-black);
 }
 .downNavbar .navbar_btns{
-    width: 19%;
+    width: 25%;
     display: flex;     
     color: var(--SkyBlue);
     justify-content: space-between;
