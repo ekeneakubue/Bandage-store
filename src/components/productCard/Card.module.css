@@ -1,0 +1,35 @@
+.card_body{
+    transition: all 0.5s ease;
+    padding: 1rem 0rem
+}
+.card_body:hover{
+    transition: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.card_body img{
+    width: 90%;
+}
+.card_body p{
+    margin-top: 1rem;
+}
+.product_cards{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.card_body h5{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.card_body h5 span:first-child{    
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--OldPriceColor);
+}
+.card_body h5 span:last-child{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--TopnavBg);
+}
