@@ -5,6 +5,7 @@ import { useGetProductsQuery } from '../../redux/api';
 import Card from '../../components/productCard/Card';
 import Services from '../../components/services/Services';
 import Features from '../../components/features/Features';
+import Feedback from '../../components/feedback/Feedback';
 
 const Home = () => {
 
@@ -69,6 +70,11 @@ const Home = () => {
       {/*Features Section  */}
       <section>
         <Features />
+      </section>
+
+      {/*Feedback Section  */}
+      <section>
+        <Feedback />
       </section>
     </div>
   )
