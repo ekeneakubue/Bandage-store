@@ -11,7 +11,7 @@ const Home = () => {
   const [visibleCount, setVisibleCount] = useState(10);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className={style.loader} id='loader'>Bandage...</div>;
   }
 
   if (error) {
