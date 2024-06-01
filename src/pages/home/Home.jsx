@@ -3,8 +3,9 @@ import style from './Home.module.css'
 import HeroSection from '../../components/heroSection/HeroSection'
 import { useGetProductsQuery } from '../../redux/api';
 import Card from '../../components/productCard/Card';
+import Services from '../../components/services/Services';
 
-export default function Home() {
+const Home = () => {
 
   const { data, error, isLoading } = useGetProductsQuery();
   const [visibleCount, setVisibleCount] = useState(10);
@@ -34,23 +35,37 @@ export default function Home() {
 
   return (           
     <div className={style.home}>
-      <HeroSection />
-      <div className={style.products}> 
-        <h4>Featured Products</h4>    
-        <h3>BESTSELLER PRODUCTS</h3>  
-        <p>Problems trying to resolve the conflict between </p>            
-        <div className={style.product_cards}>
-            {displayedItems}  
-        </div>
+      {/* Hero Section */}
+      <section>
+        <HeroSection />
+      </section>
+      
+      {/* Products Section */}
+      <section>
+        <div className={style.products}> 
+          <h4>Featured Products</h4>    
+          <h3>BESTSELLER PRODUCTS</h3>  
+          <p>Problems trying to resolve the conflict between </p>            
+          <div className={style.product_cards}>
+              {displayedItems}  
+          </div>
 
-        {
-          visibleCount < data.products.length && (
-            <button onClick={handleLoadMore} className={style.pro_button}>
-              LOAD MORE PRODUCTS
-            </button>
-          )
-        }       
-      </div>   
+          {
+            visibleCount < data.products.length && (
+              <button onClick={handleLoadMore} className={style.pro_button}>
+                LOAD MORE PRODUCTS
+              </button>
+            )
+          }       
+        </div>   
+      </section> 
+
+      {/*Services Section  */}
+      <section>
+        <Services />
+      </section>
     </div>
   )
 }
+
+export default Home

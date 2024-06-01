@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './HeroSection.module.css'
 
-export default function HeroSection() {
+const HeroSection = () => {
     return (
         <div className={style.hero_container}>
             <div className={`${style.hero_item1} ${style.hero_item}`}>
@@ -27,3 +27,5 @@ export default function HeroSection() {
         </div>      
     )
 }
+
+export default HeroSection

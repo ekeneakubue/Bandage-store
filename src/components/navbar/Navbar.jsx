@@ -2,7 +2,7 @@ import React from 'react'
 import style from './Navbar.module.css'
 import TopNavbar from './TopNavbar'
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <>
         <div className={style.topNavbar}>
@@ -40,3 +40,5 @@ export default function Navbar() {
     </>
   )
 }
+
+export default Navbar
