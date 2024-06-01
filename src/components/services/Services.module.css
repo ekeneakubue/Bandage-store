@@ -36,6 +36,29 @@ a{
     padding: 1rem 8rem;
     
 }
+.services > h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--Navs-black);
+    letter-spacing: 0.2px;
+}
+.services > h3{   
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--Brand-black);
+}
+.services > p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--Navs-black);
+
+}
+
 .grid_container{
     text-align: center;
     display: grid;
@@ -45,19 +68,25 @@ a{
 }
 .grid_item{
     padding: 2rem 1rem;
-    background-color: white;
+    display: grid;
+    place-items: center;
+    row-gap: 1rem;
 }
-
-.services h3{   
-    margin: 1rem;
-    font-size: 20px;
-    color: var(--Navs-black);
+.grid_item img{
+    width: 72px;
+    height: 72px;
 }
-.services > p{
-    /* margin: 1rem 5rem; */
+.grid_item h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Brand-black);
+}
+.grid_item p{
+    font-size: 14px;
     font-weight: 400;
     color: var(--Navs-black);
 }
+
 
 /* ========== END SERVICES STYLES ========== */
 
