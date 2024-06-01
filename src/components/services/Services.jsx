@@ -4,7 +4,7 @@ import style from './Services.module.css'
 const Services = () => {
   return (
     <div className={style.services}>
-        <h5>Featured Products</h5>
+        <h4>Featured Products</h4>
         <h3>THE BEST SERVICES</h3>
         <p>Problems trying to resolve the conflict between </p>
         <div className={style.grid_container}>
