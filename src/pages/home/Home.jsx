@@ -6,6 +6,7 @@ import Card from '../../components/productCard/Card';
 import Services from '../../components/services/Services';
 import Features from '../../components/features/Features';
 import Feedback from '../../components/feedback/Feedback';
+import ConflictResolution from '../../components/conflictresolution/ConflictResolution';
 
 const Home = () => {
 
@@ -75,6 +76,11 @@ const Home = () => {
       {/*Feedback Section  */}
       <section>
         <Feedback />
+      </section>
+
+      {/*Conflict Resolution Section  */}
+      <section>
+        <ConflictResolution />
       </section>
     </div>
   )

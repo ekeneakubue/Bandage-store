@@ -1,0 +1,47 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --SkyBlue: #23A6F0;
+    --body-font: "Montserrat", sans-serif;
+    --BadgeBg:#E74040;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+/* ========== END GLOBAL STYLES ========== */
+
+
+
+.conflict_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    gap: 2rem;
+    align-items: center;
+    background-image: url(images/conflict/conflict.png);  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.conflict_container > button{
+    background-color: var(--SkyBlue);
+    color: var(--BgColor);
+    border: 1px solid var(--SkyBlue);
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+}
