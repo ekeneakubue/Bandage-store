@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function ProductDetails() {
+const ProductDetails = () => {
   return (
-    <div>
-        ProductDetails
-    </div>
+    <div>ProductDetails</div>
   )
 }
+
+export default ProductDetails

@@ -1,0 +1,63 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --OldPriceColor: #BDBDBD;
+    --SkyBlue: #23A6F0;
+    --body-font: "Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+/* ========== END GLOBAL STYLES ========== */
+
+
+
+
+/* ========== START SERVICES STYLES ========== */
+.services{
+    width: 100%;
+    text-align: center;
+    min-height: 30vh;
+    display: grid;
+    padding: 1rem 8rem;
+    
+}
+.grid_container{
+    text-align: center;
+    display: grid;
+    margin: 2rem 0rem;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid_item{
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+.services h3{   
+    margin: 1rem;
+    font-size: 20px;
+    color: var(--Navs-black);
+}
+.services > p{
+    /* margin: 1rem 5rem; */
+    font-weight: 400;
+    color: var(--Navs-black);
+}
+
+/* ========== END SERVICES STYLES ========== */
+

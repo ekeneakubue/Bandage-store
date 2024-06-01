@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Navbar.module.css'
 
-export default function TopNavbar() {
+const TopNavbar = () => {
     return (
         <>
             <div className={style.top_navbar}>
@@ -23,3 +23,5 @@ export default function TopNavbar() {
         </>
     )
 }
+
+export default TopNavbar
