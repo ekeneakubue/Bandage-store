@@ -4,6 +4,7 @@ import HeroSection from '../../components/heroSection/HeroSection'
 import { useGetProductsQuery } from '../../redux/api';
 import Card from '../../components/productCard/Card';
 import Services from '../../components/services/Services';
+import Features from '../../components/features/Features';
 
 const Home = () => {
 
@@ -63,6 +64,11 @@ const Home = () => {
       {/*Services Section  */}
       <section>
         <Services />
+      </section>
+
+      {/*Features Section  */}
+      <section>
+        <Features />
       </section>
     </div>
   )

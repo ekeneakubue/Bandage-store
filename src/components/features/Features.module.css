@@ -1,0 +1,78 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --SkyBlue: #23A6F0;
+    --body-font: "Montserrat", sans-serif;
+    --BadgeBg:#E74040;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+/* ========== END GLOBAL STYLES ========== */
+
+
+.features{
+    text-align: center; 
+    display: grid;
+    gap: 40px;  
+    width: 100%;
+}
+.feat_header > h6{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--SkyBlue);
+}
+.feat_header > h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: var(--Brand-black);
+}
+
+.feat_container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 4rem;    
+    gap: 0.3rem;
+}
+.feat_item{
+    width: 100%;
+    text-align: center;
+}
+
+.item_hero{
+    position: relative;
+}
+.item_hero > img{
+    width: 100%;    
+}
+.item_hero > span{
+    background-color: var(--BadgeBg);
+    color: var(--BgColor);
+    border-radius: 3px;
+    width: 58px;
+    height: 24px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    top: 20px;
+    left: 20px;
+}
