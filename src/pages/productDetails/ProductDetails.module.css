@@ -7,6 +7,8 @@
     --Navs-black: #737373;
     --OldPriceColor: #BDBDBD;
     --SkyBlue: #23A6F0;
+    --LeafGreen:#2DC071;
+    --SexyPink:#E77C40;
     --body-font: "Montserrat", sans-serif;
 }
 *{
@@ -108,44 +110,75 @@ a{
 /* ========== END GLOBAL STYLES ========== */
 
 
-header .first_navbar{
-    padding: 0rem 2rem;
-    background-color: var(--TopnavBg);
-}
-header .second_navbar{
-    padding: 0rem 2rem;
-}
-.products{
-    padding: 5rem 8rem;    
-    text-align: center;
-}
-.products h4{   
-    margin-bottom: 1rem;
-    font-size: 20px;
-    color: var(--Navs-black);
-}
-.products > p{
-    font-weight: 400;
-    margin-top: 20px;
-    color: var(--Navs-black);
-}
 
-.product_cards{
-    width: 100%;
-    margin-top: 2rem;
+
+.productDetails{
+    height: 550px;
+    padding: 1rem 11rem;
+    gap: 3rem;
     display: grid;
-    gap: 4rem 1rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-
-.products > .pro_button{
-    width: 20%;
-    padding: 1rem;
-    margin-top: 2rem;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--SkyBlue);
-    background-color: transparent;
+.item_pics{
+    width: 510px;
+    height: 550px;
+}
+.item_pics > img{
+    width: 506px;
+    height: 450px;
+}
+.other_pics{    
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.item_info p img{
+    width: 6rem;
+}
+.item_info p{
+    margin: 1rem 0rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 12px;
+}
+.attributre{
+    margin-top: 10rem;    
+}
+.colors{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.colors > span{
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.colors > .color1{
+    background-color: var(--SkyBlue);
+}
+.colors > .color2{
+    background-color: var(--LeafGreen);
+}
+.colors > .color3{
+    background-color: var(--SexyPink);
+}
+.colors > .color4{
+    background-color: var(--Brand-black);
+}
+.attributre > section{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.attributre > section button{
+    width: 148px;
+    height: 44px;
     border: 1px solid var(--SkyBlue);
+    background-color: var(--SkyBlue);
+    border-radius: 5px;
+    color: var(--BgColor);
 }

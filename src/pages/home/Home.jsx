@@ -7,6 +7,8 @@ import Services from '../../components/services/Services';
 import Features from '../../components/features/Features';
 import Feedback from '../../components/feedback/Feedback';
 import ConflictResolution from '../../components/conflictresolution/ConflictResolution';
+import Navbar from '../../components/navbar/Navbar';
+import TopNavbar from '../../components/navbar/TopNavbar';
 
 const Home = () => {
 
@@ -14,7 +16,8 @@ const Home = () => {
   const [visibleCount, setVisibleCount] = useState(10);
 
   if (isLoading) {
-    return <div className={style.loader} id='loader'>Bandage...</div>;
+    return <div className={style.home_loader}><div className={style.loader} id='loader'>
+      Bandage...</div></div>;
   }
 
   if (error) {
@@ -38,6 +41,9 @@ const Home = () => {
 
   return (           
     <div className={style.home}>
+      {/* Nvbar Section */}
+      
+
       {/* Hero Section */}
       <section>
         <HeroSection />
@@ -49,7 +55,7 @@ const Home = () => {
           <h4>Featured Products</h4>    
           <h3>BESTSELLER PRODUCTS</h3>  
           <p>Problems trying to resolve the conflict between </p>            
-          <div className={style.product_cards}>
+          <div className={style.product_cards}>              
               {displayedItems}  
           </div>
 

@@ -45,3 +45,15 @@ a{
     padding: 15px 40px 15px 40px;
     border-radius: 5px;
 }
+
+.foot_brand_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 11rem;
+    background-color: var(--FootTopBg);
+}
+.foot_social{
+    display: flex;
+    gap: 1rem;
+}
