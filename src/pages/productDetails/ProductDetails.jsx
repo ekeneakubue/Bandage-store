@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './ProductDetails.module.css'
 import Navbar2 from '../../components/navbar2/Navbar2'
+import ProductInfo from '../../components/productInfo/ProductInfo'
 
 // import { useParams } from 'react-router-dom'
 
@@ -48,6 +49,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      <ProductInfo/>
     </>
   )
 }
