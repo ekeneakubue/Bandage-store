@@ -34,8 +34,10 @@ a{
     grid-template-columns: repeat(3, 1fr);  
 }
 .hero_item{
-    padding: 2rem;
-    cursor: pointer;    
+    display: flex;  
+    flex-direction: column;  
+    padding: 2rem;    
+    row-gap: 1rem;   
 }
 .hero_item h6:first-child{
     font-weight: 700;
@@ -45,7 +47,8 @@ a{
 }
 .hero_item h6:last-child{
     font-weight: 700;
-    font-size: 14px;    
+    font-size: 14px;
+    cursor: pointer;     
 }
 
 .hero_item1{  

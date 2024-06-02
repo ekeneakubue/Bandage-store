@@ -1,12 +1,15 @@
 import React from 'react'
-import style from './Navbar.module.css'
+import { Link } from 'react-router-dom'
+import style from './Navbar2.module.css'
+import TopNavbar2 from './TopNavbar2'
 
-const Navbar = () => {
+const Navbar2 = () => {
   return (
-    <>      
+    <>
+      <TopNavbar2/>      
       <div className={style.downNavbar}>
           <div className={style.left}>
-            <h3>Bandage</h3>
+            <h3><Link to = '/'>Bandage</Link></h3>
           </div>
           <div className={style.right}>
             <div className={style.navs}>
@@ -37,4 +40,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar2

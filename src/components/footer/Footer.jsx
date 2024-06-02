@@ -4,15 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className={style.footer}>
-        <div className={style.foot_brand_section}>
-            <h3>Bandage</h3>
-            <div className={style.foot_social}>
-                <img src="images/footer/fb.png" alt="" />
-                <img src="images/footer/ig.png" alt="" />
-                <img src="images/footer/x.png" alt="" />
-            </div>
-        </div>
+    <div className={style.footer}>        
         <div className={style.foot_features}>
             <div className={`${style.foot_item1} ${style.foot_item}`}>
                 <h5>Company Info</h5>
