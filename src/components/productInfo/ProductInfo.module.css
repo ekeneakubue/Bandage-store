@@ -1,0 +1,62 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --OldPriceColor: #BDBDBD;
+    --SkyBlue: #23A6F0;
+    --LeafGreen:#2DC071;
+    --SexyPink:#E77C40;
+    --body-font: "Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+
+.Productinfo{
+    padding: 5rem 11rem;
+}
+.info_navbar{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--OldPriceColor);
+}
+
+.info_container{
+    margin: 1.5rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.info_item > h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--Brand-black);
+}
+.info_item > p{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--Navs-black);
+    margin: 1.5rem 0rem;
+}
+.info_nav_item{
+    cursor: pointer;
+}
+.p_border{
+    padding-left: 1rem;
+    border-left: 3px solid var(--TopnavBg);
+}
