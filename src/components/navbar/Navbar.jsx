@@ -1,40 +1,54 @@
-import React from 'react'
-import style from './Navbar.module.css'
+import design from './Navbar.module.css'
+import { useState } from 'react'
+import classNames from 'classnames'
+import TopNavbar from './TopNavbar';
 
 const Navbar = () => {
-  return (
-    <>      
-      <div className={style.downNavbar}>
-          <div className={style.left}>
-            <h3>Bandage</h3>
-          </div>
-          <div className={style.right}>
-            <div className={style.navs}>
-              <ul>
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <>
+        <TopNavbar/>
+        <nav className={design.container}>
+            <section className={design.title}>
+                <h3>Bandage</h3>
+            </section>
+            <section className={design['nav-links']}>
+                <ul className={design['nav-list-item']}>
+                    <li>Home</li>
+                    <li>Shop </li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>Pages</li>
+                </ul>
+                <ul className={classNames(design.signup, design.list_items)}>
+                    <li><img src="/images/downnav/user-icon.png" alt="user" />Login / Register</li>
+                    <li><img src="/images/downnav/search-icon.png" alt="search" /></li>
+                    <li><img src="/images/downnav/cart-icon.png" alt="cart" />1</li>
+                    <li><img src="/images/downnav/like-icon.png" alt="like" />1</li>
+                </ul>
+            </section>
+            <section className={design['toggle-menu']}>
+              <img src="/images/downnav/search-icon.png" alt="search" />
+              <img src="/images/downnav/cart-icon.png" alt="cart" />
+                <img src='images/navbar/menuBtn.png' alt="toggle menu" onClick={toggleMenu}/>
+            </section>
+            <ul className={classNames(design.toggle_items, { [design['is-open']]: isOpen })}>
                 <li>Home</li>
-                <li>Shop</li>
-                <li>About</li>
-                <li>Blog</li>
+                <li>Product</li>
+                <li>Pricing</li>
                 <li>Contact</li>
-                <li>Pages</li>
-              </ul>
-            </div>
-            <div className={style.navbar_btns}>
-              <h6><img src="images/downnav/user-icon.png" alt="user" />Login / Register</h6>
-              <div>
-                <img src="images/downnav/search-icon.png" alt="search" />
-              </div>
-              <div>
-                <img src="images/downnav/cart-icon.png" alt="cart" /><sup>1</sup>
-              </div>
-              <div>
-                <img src="images/downnav/like-icon.png" alt="like" /><sup>1</sup>
-              </div>
-            </div>
-          </div>
-      </div>
-    </>
-  )
+            </ul>
+        </nav>
+
+        </>
+    )
 }
 
 export default Navbar

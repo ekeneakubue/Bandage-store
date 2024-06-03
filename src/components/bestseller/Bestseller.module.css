@@ -82,3 +82,12 @@ a{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .bestseller{      
+        background-color: var(--Bestseller-bg);
+        padding: 2rem 1rem;
+    }
+}

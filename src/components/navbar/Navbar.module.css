@@ -23,7 +23,6 @@ a{
 
 /* ========== END GLOBAL STYLES ========== */
 
-
 /* ========== START TOPNAVBAR STYLES ========== */
 .top_navbar{
     height: 58px;
@@ -32,7 +31,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 2rem;
+    padding: 0rem 8rem;
     background-color: var(--TopnavBg);
 }
 .top_navbar .left{
@@ -69,65 +68,101 @@ a{
 /* ========== END TOPNAVBAR STYLES ========== */
 
 
+.container {
+    margin: 0;
+    padding: 0;
+    height: 58px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    position: relative;
+}
 
-/* ========== START DOWN NAVBAR STYLES ========== */
-.downNavbar{
-    padding: 0rem 2rem;
-    height: 58px;
+.title {
+    width: 187px;
+    /* height: 58px; */
     display: flex;
     align-items: center;
-    margin-top: 1rem;
 }
-.downNavbar > .left{
-    display: flex;
-    align-items: center;
-    width: 15%;
-    height: 58px;   
-}
-.downNavbar > .left h3{
-    font-weight: 700;
+
+.title > h3 {
+    font-family: 'Montserrat';
     font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: var(--Brand-black);
-    cursor: pointer;
+    font-weight: 700;
+    color: rgba(37, 43, 66, 1);
 }
-.downNavbar > .right{
+
+.nav-links {
+    width: 1100px;
     display: flex;
-    align-items: center;
-    justify-content: space-between  ;
-    width: 85%;
-    height: 58px;
-}
-.downNavbar > .right .navs{
-    width: 70%;
-    cursor: pointer;
-}
-.downNavbar > .right .navs ul{
-    display: flex;
-    width: Hug (361px)px;
-    height: Hug (25px)px;
-    top: 16.5px;
-    gap: 23px;
-    opacity: 0px;
-    color: var(--Navs-black);
-}
-.downNavbar .navbar_btns{
-    width: 25%;
-    display: flex;     
-    color: var(--SkyBlue);
     justify-content: space-between;
 }
-.navbar_btns > h6{
+
+.nav-links > ul {
+    list-style-type: none;
     display: flex;
-    font-weight: 700;
     align-items: center;
-    letter-spacing: 0.2px;
-    gap: 0.5rem;
+    gap: 15px;
+}
+
+.nav-links > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family: 'Montserrat';
     font-size: 14px;
-    cursor: pointer;
+    font-weight: 700;
 }
-.navbar_btns img{
-    cursor: pointer;
+
+.signup {
+    color: rgba(35, 166, 240, 1);
 }
-/* ========== START DOWN NAVBAR STYLES ========== */
+
+.toggle-menu {
+    display: none;
+    position: relative;
+    margin: auto;
+}
+
+.toggle_items {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    width: 370px;
+    height: 350px;
+    top: 70%;
+    left: 0;
+    background-color: white;
+}
+
+.toggle_items > li {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    color: rgba(115, 115, 115, 1);
+}
+
+@media screen and (max-width: 414px) {
+    .top_navbar{
+        display: none;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .toggle_items.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

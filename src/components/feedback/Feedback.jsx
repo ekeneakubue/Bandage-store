@@ -21,31 +21,31 @@ const Feedback = () => {
             <div className={style.feedback_item2}>
                 <div className={style.image_container}>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed1.png" alt="" />
+                        <img src="/images/feedback/feed1.png" alt="" />
                     </div>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed2.png" alt="" />
+                        <img src="/images/feedback/feed2.png" alt="" />
                     </div>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed3.png" alt="" />
+                        <img src="/images/feedback/feed3.png" alt="" />
                     </div>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed4.png" alt="" />
+                        <img src="/images/feedback/feed4.png" alt="" />
                     </div>
                     <div className={style.img_item}>
                         <img src="images/feedback/feed5.png" alt="" />
                     </div>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed6.png" alt="" />
+                        <img src="/images/feedback/feed6.png" alt="" />
                     </div>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed7.png" alt="" />
+                        <img src="/images/feedback/feed7.png" alt="" />
                     </div>
                     <div className={style.img_item}>
-                        <img src="images/feedback/feed8.png" alt="" />
+                        <img src="/images/feedback/feed8.png" alt="" />
                     </div>
                     <div className={style.img_item}>   
-                        <img src="images/feedback/feed9.png" alt="" />
+                        <img src="/images/feedback/feed9.png" alt="" />
                     </div>
                 </div>
             </div>
