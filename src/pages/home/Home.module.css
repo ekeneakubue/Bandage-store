@@ -22,8 +22,6 @@ a{
     text-decoration: none;
 } 
 
-
-
 /* Start Loader Styling */
 .loader {    
     width: 250px;
@@ -115,6 +113,7 @@ header .first_navbar{
 header .second_navbar{
     padding: 0rem 2rem;
 }
+
 .products{
     padding: 5rem 8rem;    
     text-align: center;
@@ -128,24 +127,4 @@ header .second_navbar{
     font-weight: 400;
     margin-top: 20px;
     color: var(--Navs-black);
-}
-
-.product_cards{
-    width: 100%;
-    margin-top: 2rem;
-    display: grid;
-    gap: 4rem 1rem;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.products > .pro_button{
-    width: 20%;
-    padding: 1rem;
-    margin-top: 2rem;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--SkyBlue);
-    background-color: transparent;
-    border: 1px solid var(--SkyBlue);
 }
