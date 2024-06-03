@@ -128,3 +128,11 @@ header .second_navbar{
     margin-top: 20px;
     color: var(--Navs-black);
 }
+
+
+@media screen and (max-width: 768px) {
+    .products{
+        padding: 5rem 1rem;    
+        text-align: center;
+    }
+}

@@ -76,3 +76,11 @@ a{
     top: 20px;
     left: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .feat_container{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;    
+    }
+}

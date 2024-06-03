@@ -60,3 +60,22 @@ a{
     padding-left: 1rem;
     border-left: 3px solid var(--TopnavBg);
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .Productinfo{
+        padding: 5rem 1rem;
+    }
+    .info_navbar{
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .info_container{
+        grid-template-columns: 1fr;
+    }
+    .info_img > img{
+        width: 100%;
+    }
+}

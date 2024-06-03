@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './ProductDetails.module.css'
-import Navbar2 from '../../components/navbar2/Navbar2'
 import ProductInfo from '../../components/productInfo/ProductInfo'
 import { Bestseller } from '../../components/bestseller/Bestseller'
 import Product from '../../components/products/Product'
@@ -32,11 +31,7 @@ const ProductDetails = () => {
 
 
   return (
-    <>
-      {/* Nvbar Section */}
-      <header>
-        <Navbar2/>
-      </header>
+    <>     
       <div className={style.productDetails}>      
         <div className={style.item_pics}>
           <img src={images} alt="title" />
@@ -71,6 +66,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <ProductInfo/>
+      {/* 
       <Bestseller/>
       <div className={style.foot_brand}>
         <div className={style.foot_brand_name}>Bandage</div>
@@ -79,7 +75,7 @@ const ProductDetails = () => {
           <img src="/images/productdetail/ig.png" alt="" />
           <img src="/images/productdetail/x.png" alt="" />
         </div>
-      </div>      
+      </div>       */}
     </>
   )
 }

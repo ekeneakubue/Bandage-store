@@ -91,3 +91,17 @@ a{
 
 /* ========== END SERVICES STYLES ========== */
 
+
+
+@media screen and (max-width: 768px) {
+    .services{
+        width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 2rem;
+        
+    }
+    .grid_container{
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+}

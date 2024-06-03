@@ -5,10 +5,11 @@ import Services from '../../components/services/Services';
 import Features from '../../components/features/Features';
 import Feedback from '../../components/feedback/Feedback';
 import ConflictResolution from '../../components/conflictresolution/ConflictResolution';
-import Navbar from '../../components/navbar/Navbar';
 import { useGetProductsQuery } from '../../redux/api';
-import TopNavbar from '../../components/navbar/TopNavbar';
 import Product from '../../components/products/Product';
+
+
+
 
 const Home = () => {
   const { data, error, isLoading } = useGetProductsQuery();
@@ -29,16 +30,7 @@ const [visibleCount, setVisibleCount] = useState(10);
 
   
   return (           
-    <div className={style.home}>
-      {/* Nvbar Section */}
-      <header>
-        <div className={style.first_navbar}>
-          <TopNavbar/>
-        </div>
-        <div className={style.second_navbar}>
-          <Navbar />
-        </div>
-      </header>
+    <div className={style.home}>      
 
       {/* Hero Section */}
       <section>
@@ -71,9 +63,9 @@ const [visibleCount, setVisibleCount] = useState(10);
       </section>
 
       {/*Conflict Resolution Section  */}
-      <section>
+      {/* <section>
         <ConflictResolution />
-      </section>
+      </section> */}
     </div>
   )
 }

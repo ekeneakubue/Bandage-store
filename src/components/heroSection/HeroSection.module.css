@@ -78,3 +78,18 @@ a{
     background-repeat: no-repeat;    
 }
 
+
+@media screen and (max-width: 768px) {
+    .hero_container{
+        padding: 0rem 1rem;    
+        display: grid; 
+        gap: 15px;
+        grid-template-columns: 1fr;  
+    }
+    .hero_item1{          
+        grid-row-end: span 1;
+    }
+    .hero_item2{ 
+        grid-column-start: span 1;  
+    }
+}

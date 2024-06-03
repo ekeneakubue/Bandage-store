@@ -52,3 +52,22 @@ a{
     background-color: transparent;
     border: 1px solid var(--SkyBlue);
 }
+
+
+@media screen and (max-width: 768px) {
+    .product_cards{
+        margin-top: 2rem;
+        gap: 4rem 1rem;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .pro_button{
+        width: 80%;
+        padding: 1rem;
+        margin-top: 5rem;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: transparent;
+        border: 1px solid var(--SkyBlue);
+    }
+}
