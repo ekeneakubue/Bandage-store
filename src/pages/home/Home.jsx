@@ -1,19 +1,18 @@
 import React, { useState } from 'react'
 import style from './Home.module.css'
 import HeroSection from '../../components/heroSection/HeroSection'
-import { useGetProductsQuery } from '../../redux/api';
-import Card from '../../components/productCard/Card';
 import Services from '../../components/services/Services';
 import Features from '../../components/features/Features';
 import Feedback from '../../components/feedback/Feedback';
 import ConflictResolution from '../../components/conflictresolution/ConflictResolution';
 import Navbar from '../../components/navbar/Navbar';
+import { useGetProductsQuery } from '../../redux/api';
 import TopNavbar from '../../components/navbar/TopNavbar';
+import Product from '../../components/products/Product';
 
 const Home = () => {
-
   const { data, error, isLoading } = useGetProductsQuery();
-  const [visibleCount, setVisibleCount] = useState(10);
+const [visibleCount, setVisibleCount] = useState(10);
 
   if (isLoading) {
     return <div className={style.home_loader}><div className={style.loader} id='loader'>
@@ -28,21 +27,18 @@ const Home = () => {
     setVisibleCount((prevCount) => prevCount + 10);
   };
 
-  const displayedItems = data.products.slice(0, visibleCount).map((item) => (
-    <Card
-      key={item.id}
-      imageUrl={item.thumbnail}
-      title={item.title}
-      category={item.category}
-      price={item.price}
-      discountPercentage={item.discountPercentage}
-    />
-  ));
-
+  
   return (           
     <div className={style.home}>
       {/* Nvbar Section */}
-      
+      <header>
+        <div className={style.first_navbar}>
+          <TopNavbar/>
+        </div>
+        <div className={style.second_navbar}>
+          <Navbar />
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section>
@@ -55,18 +51,8 @@ const Home = () => {
           <h4>Featured Products</h4>    
           <h3>BESTSELLER PRODUCTS</h3>  
           <p>Problems trying to resolve the conflict between </p>            
-          <div className={style.product_cards}>              
-              {displayedItems}  
-          </div>
-
-          {
-            visibleCount < data.products.length && (
-              <button onClick={handleLoadMore} className={style.pro_button}>
-                LOAD MORE PRODUCTS
-              </button>
-            )
-          }       
-        </div>   
+          <Product/>          
+        </div> 
       </section> 
 
       {/*Services Section  */}

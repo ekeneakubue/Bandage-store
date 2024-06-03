@@ -2,16 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import style from './Card.module.css'
 
-const Card = (props) => {
+const Card = ({ id, title, category, price, discountPercentage, imageUrl }) => {
+  
   return (  
-    <Link to = './productDetails'> 
+    <Link to = {`/product/${id}`}> 
       <div className={style.card}>
-          <img src={props.imageUrl} />
-          <h5>{props.title}</h5>
-          <p>{props.category}</p>
+          <img src={imageUrl} />
+          <h5>{title}</h5>
+          <p>{category}</p>
           <h5>
-              <span>${props.price}</span>
-              <span>${props.discountPercentage}</span>
+              <span>${price}</span>
+              <span>${discountPercentage}</span>
           </h5>                                                 
       </div> 
     </Link>

@@ -9,7 +9,9 @@
     --body-font: "Montserrat", sans-serif;
     --BadgeBg:#E74040;
     --FootTopBg: #FAFAFA;
+    --PlaceholderBg:#E6E6E6;
 }
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -23,6 +25,9 @@ a{
     text-decoration: none;
     color: var(--Navs-black);
 } 
+::placeholder{
+    padding-left: 1rem;
+}
 
 /* ========== END GLOBAL STYLES ========== */
 
@@ -34,20 +39,45 @@ a{
 }
 .foot_features{
     display: grid;
-    gap: 1rem 2rem;
-    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(6, 1fr);
     padding: 1rem 11rem;
 }
 .foot_item{
     display: grid;
     row-gap: 0.5rem;
     margin-bottom: 1.5rem;
+    font-size: 10px;
 }
-
+.foot_item h5{
+    font-size: 14px;
+}
 .copyright_section{
     padding: 2rem 11rem;
     background-color: var(--FootTopBg);
     color: var(--Navs-black);
     font-size: 14px;
     font-weight: 700;
+}
+.foot_item5{
+    grid-column-end: span 2;
+}
+.foot_item5 input{
+    height: 48px;
+    width: 60%;
+    padding-left: 1rem;
+    border-radius: 5px 0px 0px 5px;
+    background-color: var(--PlaceholderBg);
+    color: var(--Navs-black);
+    border: 1px solid var(--Navs-black);
+}
+.foot_item5 button{
+    background-color: var(--SkyBlue);
+    width: 40%;
+    height: 48px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid var(--SkyBlue);
+    color: var(--BgColor);
+    cursor: pointer;
+   
 }

@@ -9,7 +9,7 @@ const Navbar2 = () => {
       <TopNavbar2/>      
       <div className={style.downNavbar}>
           <div className={style.left}>
-            <h3><Link to = '/'>Bandage</Link></h3>
+            <h3><Link to = './'>Bandage</Link></h3>
           </div>
           <div className={style.right}>
             <div className={style.navs}>
@@ -23,15 +23,15 @@ const Navbar2 = () => {
               </ul>
             </div>
             <div className={style.navbar_btns}>
-              <h6><img src="images/downnav/user-icon.png" alt="user" />Login / Register</h6>
+              <h6><img src="/images/downnav/user-icon.png" alt="user" />Login / Register</h6>
               <div>
-                <img src="images/downnav/search-icon.png" alt="search" />
+                <img src="/images/downnav/search-icon.png" alt="search" />
               </div>
               <div>
-                <img src="images/downnav/cart-icon.png" alt="cart" /><sup>1</sup>
+                <img src="/images/downnav/cart-icon.png" alt="cart" /><sup>1</sup>
               </div>
               <div>
-                <img src="images/downnav/like-icon.png" alt="like" /><sup>1</sup>
+                <img src="/images/downnav/like-icon.png" alt="like" /><sup>1</sup>
               </div>
             </div>
           </div>

@@ -29,7 +29,7 @@ const ProductInfo = () => {
                 </p>
             </div>
             <div className={style.info_img}>
-                <img src="images/productdetail/desc.png" alt="" />
+                <img src="/images/productdetail/desc.png" alt="" />
             </div>
         </div>
     </div>

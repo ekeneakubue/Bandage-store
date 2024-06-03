@@ -1,0 +1,84 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --SkyBlue: #23A6F0;
+    --body-font: "Montserrat", sans-serif;
+    --BadgeBg:#E74040;
+    --Bestseller-bg: #FAFAFA;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+/* ========== END GLOBAL STYLES ========== */
+
+
+.bestseller{      
+    background-color: var(--Bestseller-bg);
+    padding: 2rem 11rem;
+}
+.bestseller_container{
+    margin: 2rem 0rem;  
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.card{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    transition: all 0.5s ease;  
+}
+.card:hover{
+    transition: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card img{
+    width: 100%;
+}
+.card h5{
+    margin: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    color: var(--Brand-black);
+    gap: 0.3rem;
+}
+.card p{
+    margin-top: 1rem;
+    font-size: 14px;
+    color: var(--Navs-black);
+}
+.card h5 span:first-child{    
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--OldPriceColor);
+}
+.card h5 span:last-child{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--TopnavBg);
+}
+
+.brand_icons{
+    padding: 3rem 0rem;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}

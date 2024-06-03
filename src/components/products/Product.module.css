@@ -1,0 +1,54 @@
+/* ========== START GLOBAL STYLES ========== */
+:root{
+    --TopnavBg: #23856D;
+    --BgColor: #ffffff;
+    --textBlack: #000;
+    --Brand-black: #252B42;
+    --Navs-black: #737373;
+    --OldPriceColor: #BDBDBD;
+    --SkyBlue: #23A6F0;
+    --body-font: "Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+} 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} 
+
+
+
+
+
+
+
+/* ========== END GLOBAL STYLES ========== */
+
+
+
+
+.product_cards{
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    gap: 4rem 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.pro_button{
+    width: 20%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--SkyBlue);
+    background-color: transparent;
+    border: 1px solid var(--SkyBlue);
+}
