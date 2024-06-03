@@ -52,27 +52,27 @@ a{
 }
 
 .hero_item1{  
-    background-image: url(images/hero/hero1.png);  
+    background-image: url(/images/hero/hero1.png);  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
     grid-row-end: span 2;
 }
 .hero_item2{  
-    background-image: url(images/hero/hero2.png); 
+    background-image: url(/images/hero/hero2.png); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
     grid-column-start: span 2;  
 }
 .hero_item3{    
-    background-image: url(images/hero/hero3.png);
+    background-image: url(/images/hero/hero3.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;     
 }
 .hero_item4{    
-    background-image: url(images/hero/hero4.png); 
+    background-image: url(/images/hero/hero4.png); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;    
