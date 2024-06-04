@@ -14,12 +14,9 @@ Welcome to the Bandage Ecommerce Store! This is a fully functional ecommerce web
 ## Features
 
 - Responsive design
-- Product listing with categories
+- Product listing
 - Product details page
 - Shopping cart functionality
-- User authentication (Login/Register)
-- Search functionality
-- And more...
 
 ## Technologies Used
 
