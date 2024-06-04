@@ -2,6 +2,7 @@ import design from './Navbar.module.css'
 import { useState } from 'react'
 import classNames from 'classnames'
 import TopNavbar from './TopNavbar';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <TopNavbar/>
         <nav className={design.container}>
             <section className={design.title}>
-                <h3>Bandage</h3>
+                <Link to = '/'><h3>Bandage</h3></Link>
             </section>
             <section className={design['nav-links']}>
                 <ul className={design['nav-list-item']}>
@@ -37,7 +38,7 @@ const Navbar = () => {
             <section className={design['toggle-menu']}>
               <img src="/images/downnav/search-icon.png" alt="search" />
               <img src="/images/downnav/cart-icon.png" alt="cart" />
-                <img src='images/navbar/menuBtn.png' alt="toggle menu" onClick={toggleMenu}/>
+                <img src='/images/navbar/menuBtn.png' alt="toggle menu" onClick={toggleMenu}/>
             </section>
             <ul className={classNames(design.toggle_items, { [design['is-open']]: isOpen })}>
                 <li>Home</li>

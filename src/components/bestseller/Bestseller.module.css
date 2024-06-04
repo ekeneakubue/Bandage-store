@@ -77,17 +77,39 @@ a{
 }
 
 .brand_icons{
-    padding: 3rem 0rem;
+    padding: 0rem 0rem;
     place-items: center;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);    
+    gap: 1rem;
+}
+.brand_icons > .icon_pic{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 1rem;
 }
 
 
-
 @media screen and (max-width: 768px) {
-    .bestseller{      
+    .bestseller{     
+        width: 100%; 
         background-color: var(--Bestseller-bg);
         padding: 2rem 1rem;
+        background-color: pink;
+    }
+    .bestseller_container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .brand_icons{
+        margin-top: 8rem;
+        gap: 1rem;
+        padding: 1rem 0rem;
+        grid-template-columns: 1fr;
+    }
+    .brand_icons > .icon_pic{
+        width: 70%;
+        background-color: red;
     }
 }

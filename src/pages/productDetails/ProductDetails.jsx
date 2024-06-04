@@ -1,13 +1,13 @@
 import React from 'react'
 import style from './ProductDetails.module.css'
 import ProductInfo from '../../components/productInfo/ProductInfo'
-import { Bestseller } from '../../components/bestseller/Bestseller'
 import Product from '../../components/products/Product'
 
 import { useParams, Link } from 'react-router-dom';
 import { useGetProductByIdQuery } from '../../redux/api.jsx';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
+import { Bestseller } from '../../components/bestseller/Bestseller.jsx';
 
 const ProductDetails = () => {
   const { productId } = useParams();
@@ -32,12 +32,11 @@ const ProductDetails = () => {
 
   return (
     <>     
-      <div className={style.productDetails}>      
+      <div className={style.productDetails} id='productDetail'>      
         <div className={style.item_pics}>
-          <img src={images} alt="title" />
+          <img src={thumbnail} alt="title" />
           <div className={style.other_pics}>
             <img src={thumbnail} alt="" />
-            {/* <img src="images/productdetail/pd3.png" alt="" /> */}
           </div>
         </div>
         <div className={style.item_info}>
@@ -57,17 +56,18 @@ const ProductDetails = () => {
               <span className={style.color4}></span>              
             </div>
             <section>
-              <button>Select Options</button>
+              <button onClick={handleAddToCart}>Select Options</button>
               <img src="/images/productdetail/like.png" alt="" />
-              <img src="/images/productdetail/basket.png" alt="" />
+              <Link to="/cart">
+                <img src="/images/productdetail/basket.png" alt="" />
+              </Link>
               <img src="/images/productdetail/more.png" alt="" />
             </section>
           </div>
         </div>
       </div>
-      <ProductInfo/>
-      {/* 
-      <Bestseller/>
+      <ProductInfo/>      
+      <Bestseller />
       <div className={style.foot_brand}>
         <div className={style.foot_brand_name}>Bandage</div>
         <div className={style.foot_social}>
@@ -75,7 +75,7 @@ const ProductDetails = () => {
           <img src="/images/productdetail/ig.png" alt="" />
           <img src="/images/productdetail/x.png" alt="" />
         </div>
-      </div>       */}
+      </div>      
     </>
   )
 }

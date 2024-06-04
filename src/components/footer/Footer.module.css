@@ -91,7 +91,7 @@ a{
     }
     .foot_item5{
         margin: auto;
-        width: 90%;
+        width: 100%;
         grid-column-end: span 1;
     }
     .copyright_section{
@@ -100,7 +100,7 @@ a{
     }
     .foot_item5 input{
         height: 28px;
-        width: 60%;
+        width: 70%;
         border-radius: 5px 0px 0px 5px;
         background-color: var(--PlaceholderBg);
         color: var(--Navs-black);
@@ -108,7 +108,7 @@ a{
     }
     .foot_item5 button{
         background-color: var(--SkyBlue);
-        width: 40%;
+        width: 30%;
         height: 28px;
         border-radius: 0px 5px 5px 0px;
         border: 1px solid var(--SkyBlue);
@@ -123,7 +123,7 @@ a{
     .foot_item{
         display: grid;
         row-gap: 0.5rem;
-        padding-left: 1rem;
+        padding: 0rem 1rem;
         margin-bottom: 1.5rem;
         font-size: 16px;
     }
