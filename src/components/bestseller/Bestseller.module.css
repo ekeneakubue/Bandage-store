@@ -96,10 +96,10 @@ a{
         width: 100%; 
         background-color: var(--Bestseller-bg);
         padding: 2rem 1rem;
-        background-color: pink;
     }
     .bestseller_container{
         width: 100%;
+        margin-top: 2rem;
         grid-template-columns: 1fr;
     }
     .brand_icons{
@@ -108,8 +108,5 @@ a{
         padding: 1rem 0rem;
         grid-template-columns: 1fr;
     }
-    .brand_icons > .icon_pic{
-        width: 70%;
-        background-color: red;
-    }
+   
 }
