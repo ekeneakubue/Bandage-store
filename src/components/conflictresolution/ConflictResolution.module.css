@@ -33,7 +33,7 @@ a{
     height: 80vh;
     gap: 2rem;
     align-items: center;
-    background-image: url(images/conflict/conflict.png);  
+    background-image: url(/images/conflict/conflict.png);  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
@@ -47,13 +47,27 @@ a{
 }
 
 .foot_brand_section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 2rem 11rem;
     background-color: var(--FootTopBg);
 }
 .foot_social{
     display: flex;
     gap: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .conflict_container{
+        height: 80vh;
+        background-image: url(/images/conflict/mBg.png);  
+        padding: 0rem 2rem;
+    }
+    .foot_brand_section{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
 }

@@ -63,9 +63,9 @@ const [visibleCount, setVisibleCount] = useState(10);
       </section>
 
       {/*Conflict Resolution Section  */}
-      {/* <section>
+      <section>
         <ConflictResolution />
-      </section> */}
+      </section>
     </div>
   )
 }
